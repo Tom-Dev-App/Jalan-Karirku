@@ -3,12 +3,12 @@ import React from 'react'
 import { PropTypes } from "prop-types";
 import { Icon } from '@iconify/react';
 import Image from 'next/image';
-import Button from './Btn';
+import Button from './btn';
 export default function Card({img, header, modules, price, description, isPaid = false, isPass = false, href, inProcess }) {
   
     if(isPaid === true && inProcess === false) {
         return (
-            <div className='inline-flex flex-col gap-4 rounded-[8px] shadow-xl max-w-[337px]'>
+            <div className='inline-flex flex-col gap-4 rounded-[8px] shadow-xl max-w-[337px] overflow-hidden'>
             <div className="relative w-full">
             <Image src={img.src} width="0"
             height="0"
@@ -33,7 +33,7 @@ export default function Card({img, header, modules, price, description, isPaid =
 
     if (inProcess === true && isPass === false){
     return (
-        <div className='inline-flex flex-col gap-4 rounded-[8px] shadow-xl max-w-[337px]'>
+        <div className='inline-flex flex-col gap-4 rounded-[8px] shadow-xl max-w-[337px] overflow-hidden'>
             <div className="relative w-full">
                 <Image src={img.src} width="0"
                 height="0"
@@ -55,7 +55,7 @@ export default function Card({img, header, modules, price, description, isPaid =
     }
     if (inProcess === true && isPass === true){
     return (
-        <div className='inline-flex flex-col gap-4 rounded-[8px] shadow-xl max-w-[337px]'>
+        <div className='inline-flex flex-col gap-4 rounded-[8px] shadow-xl max-w-[337px] overflow-hidden'>
             <div className="relative w-full">
                 <Image src={img.src} width="0"
                 height="0"
@@ -78,7 +78,7 @@ export default function Card({img, header, modules, price, description, isPaid =
   
     return (
     <>
-        <div className='inline-flex flex-col gap-4 rounded-[8px] shadow-xl max-w-[337px]'>
+        <div className='inline-flex flex-col gap-4 rounded-[8px] shadow-xl max-w-[337px] overflow-hidden'>
             <div className="relative w-full">
             <Image src={img.src} width="0"
             height="0"
