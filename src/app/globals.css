@@ -10,5 +10,5 @@
     .btn-primary-lg{
         @apply bg-primer2 hover:bg-primer1  text-white0 font-bold py-[16px] px-[48px] rounded-[8px] text-[20px] shadow-xl;
     }
-
+  
   }
