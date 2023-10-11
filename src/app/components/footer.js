@@ -1,6 +1,6 @@
 'use client'
 import React from 'react'
-import Button from './btn'
+import Button from './Btn'
 import { Icon } from '@iconify/react';
 
 export default function Footer() {

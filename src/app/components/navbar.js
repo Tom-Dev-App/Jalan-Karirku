@@ -71,7 +71,7 @@ export default function Navbar() {
                 <a href="#" class="text-1xl text-primer1">Webinar</a>
                 </li>
                 <li>
-                <a href="#" class="text-1xl text-primer1">counseling</a>
+                <a href="#" class="text-1xl text-primer1">Counseling</a>
                 </li>
             </ul>
             </div>

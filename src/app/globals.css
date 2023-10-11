@@ -11,4 +11,11 @@
         @apply bg-primer2 hover:bg-primer1  text-white0 font-bold py-[16px] px-[48px] rounded-[8px] text-[20px] shadow-xl;
     }
 
+    .carousel {
+        @apply transition-transform duration-500 ease-in-out;
+    }
+
+    .tab-button.active {
+        @apply bg-primer4 shadow-xl;
+    }
   }
