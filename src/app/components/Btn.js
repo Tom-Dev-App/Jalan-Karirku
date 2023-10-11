@@ -40,7 +40,7 @@ export default function Button(props) {
 
 Button.propTypes = {
     type: PropTypes.oneOf(["button", "link"]),
-    onclick: PropTypes.func,
+    onClick: PropTypes.func,
     className: PropTypes.string,
     target: PropTypes.string,
     href: PropTypes.string,
