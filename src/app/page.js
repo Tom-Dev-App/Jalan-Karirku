@@ -4,6 +4,7 @@ import Button from './components/btn'
 import Card from './components/card'
 import Footer from './components/footer'
 import Accordion from './components/accordion'
+import { Familjen_Grotesk } from 'next/font/google'
 export default function Home() {
 
   const FAQ = [
@@ -29,16 +30,34 @@ export default function Home() {
     }
 
   ]
+
+  function hello() {
+    alert("hello")
+  }
   return (
     <>
+    {/* <div className='m-12 mb-8'>
+        <Card header="Judul 1" description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia, asperiores! Reiciendis, minus." img={{src: "/assets/ilustration/Adaptability-and-Change-Management.svg",  alt: ""}} price={"100000"} modules={10} isPaid={false} isPass={false} inProcess={false} href="/"/>
 
-  {/* CONTOH SAJA */}
-    {/* <div className='m-12'>
         <Card header="Judul 1" description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia, asperiores! Reiciendis, minus." img={{src: "/assets/ilustration/Adaptability-and-Change-Management.svg",  alt: ""}} price={"100000"} modules={10} isPaid={true} isPass={false} inProcess={false} href="/"/>
-    </div> */}
-    {/* <Footer/> */}
 
-    {/* <Accordion items={FAQ}/> */}
+        <Card header="Judul 1" description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia, asperiores! Reiciendis, minus." img={{src: "/assets/ilustration/Adaptability-and-Change-Management.svg",  alt: ""}} price={"100000"} modules={10} isPaid={true} isPass={false} inProcess={true} href="/"/>
+
+        <Card header="Judul 1" description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia, asperiores! Reiciendis, minus." img={{src: "/assets/ilustration/Adaptability-and-Change-Management.svg",  alt: ""}} price={"100000"} modules={10} isPaid={true} isPass={true} inProcess={true} href="/"/>
+    </div>
+
+    <Accordion items={FAQ}/>
+    <Footer/> */}
+
+    <div className="relative w-[500px]">
+      <Image src={"/assets/ilustration/Adaptability-and-Change-Management.svg"} width="0"
+                height="0"
+                sizes="100vw"
+                style={{ width: '100%', height: 'auto' }}  alt={"hello"} loading="eager"/>
+    </div>
+    <Button className="btn-primary-sm" onClick={hello}>Hello World</Button>
+    <Button className="btn-primary-sm" type="link" href="/about">About</Button>
+    <Button className="btn-primary-sm" type="link" href="..">Back</Button>
     </>
   )
 }
