@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primer1: '#0C356A', 
+        primer1: '#0C356A',
         primer2: '#279EFF',
         primer3: '#CAE7FF',
         primer4: '#D5E5F2',
@@ -16,8 +16,8 @@ module.exports = {
         black0: '#121619',
         gray1: '#4D5358',
         gray2: '#878D96',
-      }
+      },
     },
   },
   plugins: [],
-}
+};

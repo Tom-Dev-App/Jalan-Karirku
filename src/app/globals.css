@@ -3,12 +3,11 @@
 @tailwind utilities;
 
 @layer components {
-    .btn-primary-sm {
-      @apply bg-primer2 hover:bg-primer1  text-white0 font-bold py-[8px] px-[24px] rounded-[8px] shadow-xl;
-    }
-
-    .btn-primary-lg{
-        @apply bg-primer2 hover:bg-primer1  text-white0 font-bold py-[16px] px-[48px] rounded-[8px] text-[20px] shadow-xl;
-    }
-
+  .btn-primary-sm {
+    @apply bg-primer2 hover:bg-primer1  text-white0 font-bold py-[8px] px-[24px] rounded-[8px] shadow-xl;
   }
+
+  .btn-primary-lg {
+    @apply bg-primer2 hover:bg-primer1  text-white0 font-bold py-[16px] px-[48px] rounded-[8px] text-[20px] shadow-xl;
+  }
+}
