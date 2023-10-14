@@ -91,7 +91,7 @@ export default function Navbar() {
               <span class="sr-only">Open user menu</span>
               <img
                 class="w-8 h-8 rounded-full"
-                src="https://img.freepik.com/free-photo/portrait-white-man-isolated_53876-40306.jpg?w=1800&t=st=1696996222~exp=1696996822~hmac=213226fa3d94e2da0bd7c5896410d934ec73ea8a25ab9ca8704b4c34432039a4"
+                src="\assets\img\Ellipse 2.png"
                 alt="user photo"
               />
             </button>

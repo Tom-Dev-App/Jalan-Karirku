@@ -7,13 +7,13 @@ import React from 'react';
 export default function Login() {
   return (
     <>
-      <div className="relative flex justify-center items-center py-[24px] h-[112px] border-b-[1px] border-gray2]">
+      <div className="relative flex justify-center items-center py-[24px] border-b-[1px] border-gray2">
         <Link href={'/'}>
           <Image
             width="0"
             height="0"
             sizes="100vw"
-            style={{ width: '147.404px', height: 'auto' }}
+            style={{ width: 'auto', height: '83px' }}
             alt={'brand-icon'}
             loading="eager"
             src="/assets/img/main logo.png"
@@ -21,7 +21,7 @@ export default function Login() {
         </Link>
       </div>
 
-      <div className="grid grid-cols-2 gap-8 min-h-full px-6 py-12 lg:px-8 pb-24">
+      <div className="grid grid-cols-2 gap-8 min-h-full px-6 py-12 pb-24">
         <div className="col-span-1 w-full flex justify-center items-center relative">
           <Image
             width="0"
@@ -37,7 +37,7 @@ export default function Login() {
 
         <div className="col-span-1">
           <div className="sm:mx-auto sm:w-full sm:max-wsm">
-            <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
+            <h2 className="text-center text-[54px] font-bold leading-9 tracking-tight text-gray-900">
               Sign In
             </h2>
           </div>
@@ -75,7 +75,7 @@ export default function Login() {
                 <div className="mt-2">
                   <input
                     id="password"
-                    type="text"
+                    type="password"
                     name="password"
                     placeholder="input password account you"
                     autoComplete="password"
@@ -85,7 +85,7 @@ export default function Login() {
                   <div className="text-sm">
                     <a
                       href="#"
-                      className="font-semibold p-3 text-black text-indigo-600 hover:text-indigo-500 float-right text-right"
+                      className="font-semibold p-3 text-black text-primer2 hover:text-primer1 float-right text-right"
                     >
                       {' '}
                       Forgot Password?
@@ -97,15 +97,15 @@ export default function Login() {
               <div>
                 <button
                   type="submit"
-                  className="flex w-full justify-center bg-primer2 rounded-md px-3 py-1.5 text-sm font-semibold leading-6 text-primer1 bg-primer3 hover:bg-primer1 hover:text-white0 active:ring text-white0 active-ring-gray2 mb-3 shadow-sm"
+                  className="flex w-full justify-center bg-primer2 rounded-md px-3 py-1.5 text-sm font-semibold leading-6 hover:bg-primer1 active:ring text-white0 active-ring-gray2 mb-3 shadow-sm"
                 >
                   Sign In
                 </button>
                 <p className="text-gray-500 mt-1 text-center">
                   Don't have an account yet?
                   <a
-                    href="#"
-                    className="text-blue-500 font-semibold text-black-500 hover:animate-pulse inline-block ml-2"
+                    href="/auth/register"
+                    className="text-primer2 font-semibold text-black-500 hover:animate-pulse inline-block ml-2"
                   >
                     Sign Up
                   </a>
@@ -121,7 +121,7 @@ export default function Login() {
               <div>
                 <button
                   type="submit"
-                  className="flex w-full justify-center bg-primer4 rounded-md px-3 py-1.5 text-sm font-semibold leading-6 text-primer1 bg-primer3 hover:bg-primer1 hover:text-white0 active:ring active-ring-gray2 mb-3 shadow-sm"
+                  className="flex w-full justify-center bg-primer4 rounded-md px-3 py-1.5 text-sm font-semibold leading-6 hover:bg-primer2 hover:text-white0 active:ring active-ring-gray2 mb-3 shadow-sm"
                 >
                   <span className="flex items-center gap-3">
                     <Icon icon="cib:google" /> Google
@@ -129,7 +129,7 @@ export default function Login() {
                 </button>
                 <button
                   type="submit"
-                  className="flex w-full justify-center bg-primer4 rounded-md px-3 py-1.5 text-sm font-semibold leading-6 text-primer1 bg-primer3 hover:bg-primer1 hover:text-white0 active:ring active-ring-gray2 mb-3  shadow-sm"
+                  className="flex w-full justify-center bg-primer4 rounded-md px-3 py-1.5 text-sm font-semibold leading-6 text-black0 bg-primer3 hover:bg-primer2 hover:text-white0 active:ring active-ring-gray2 mb-3  shadow-sm"
                 >
                   <span className="flex items-center gap-3">
                     <Icon icon="entypo-social:facebook-with-circle" /> Facebook

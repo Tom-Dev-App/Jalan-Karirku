@@ -1,6 +1,6 @@
 'use client';
 import Image from 'next/image';
-import Button from './components/btn';
+import Button from './components/Btn';
 import Footer from './components/footer';
 import Accordion from './components/accordion';
 import Navbar from './components/navbar';

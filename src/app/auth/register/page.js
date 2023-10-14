@@ -7,13 +7,13 @@ import React from 'react';
 export default function Register() {
   return (
     <>
-      <div className="relative flex justify-center items-center py-[24px] h-[112px] border-b-[1px] border-gray2]">
+      <div className="relative flex justify-center items-center py-[24px] border-b-[1px] border-gray2">
         <Link href={'/'}>
           <Image
             width="0"
             height="0"
             sizes="100vw"
-            style={{ width: '147.404px', height: 'auto' }}
+            style={{ width: 'auto', height: '83px' }}
             alt={'brand-icon'}
             loading="eager"
             src="/assets/img/main logo.png"
@@ -21,11 +21,11 @@ export default function Register() {
         </Link>
       </div>
 
-      <h1 className="font-bold leading-[59.4px] text-[54px] mt-[40px] text-center">
-        Sign Up
-      </h1>
-      <div className="flex items-center mt-[40px] justify-center">
-        <p className="p-4 roudned-2 bg-primer4 inline-block text-center leading-[22.4px]">
+      <div className='flex items-center flex-col'>
+        <h1 className="font-bold text-[54px] mt-[40px] text-center">
+          Sign Up
+        </h1>
+        <p className="p-4 roudned-2 mt-[24px] w-[640px] bg-primer4 inline-block text-center">
           Create your account Jalan Karirku and get first access to the very
           best of Jalan Karirku service
         </p>
@@ -47,7 +47,7 @@ export default function Register() {
                 name="username"
                 required
                 pattern="[A-Z][a-zA-Z]*"
-                title="Masukan Nama dengan awalan huruf kapital "
+                title="Masukan Nama dengan awalan huruf kapital"
                 autoComplete="name"
                 className="block pl-4 w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
               />
@@ -104,7 +104,7 @@ export default function Register() {
             <div className="mt-2">
               <input
                 id="email"
-                type="text"
+                type="email"
                 name="email"
                 autoComplete="email"
                 required
@@ -123,23 +123,12 @@ export default function Register() {
             <div className="mt-2 relative rounded-md shadow-sm">
               <input
                 id="password"
-                type="text"
+                type="password"
                 name="password"
                 autoComplete="password"
                 required
                 className="block pl-4 w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
               />
-              <div className="absolute inset-y-0 right-3 pr-0 flex items-center">
-                <button
-                  type="button"
-                  id="togglePassword"
-                  className="text-gray-600 focus:outline-none"
-                >
-                  <i id="passwordIcon" className="far fa-eye-slash">
-                    look
-                  </i>
-                </button>
-              </div>
             </div>
           </div>
 
@@ -153,24 +142,13 @@ export default function Register() {
             <div className="mt-2 relative rounded-md shadow-sm">
               <input
                 id="passwordconfir"
-                type="text"
+                type="password"
                 name="passwordconfir"
                 placeholder="input password confirmation account"
                 autoComplete="password"
                 required
                 className="block pl-4 w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
               />
-              <div className="absolute inset-y-0 right-3 pr-0 flex items-center">
-                <button
-                  type="button"
-                  id="togglePassword"
-                  className="text-gray-600 focus:outline-none"
-                >
-                  <i id="passwordIcon" className="far fa-eye-slash">
-                    look
-                  </i>
-                </button>
-              </div>
             </div>
           </div>
 
@@ -217,13 +195,13 @@ export default function Register() {
               type="submit"
               className="flex w-full justify-center bg-blue-500 rounded-md px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:scale-105 hover:shadow-lg  hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             >
-              Sign In
+              Sign Up
             </button>
             <p className="text-gray-500 mt-1 text-center">
               Already have an account?
               <a
-                href="#"
-                className="text-blue-500 font-semibold text-black-500 hover:animate-pulse inline-block ml-3"
+                href="/auth/login"
+                className="text-blue-500 font-semibold shadow-xl text-black-500 hover:animate-pulse inline-block ml-3"
               >
                 Sign In
               </a>
@@ -239,7 +217,7 @@ export default function Register() {
           <div className="flex justify-center">
             <button
               type="submit"
-              className="flex w-full justify-center mb-5 ml-1 bg-blue-500 rounded-md px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:scale-105 hover:shadow-lg  hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600  mb-3 width=120px;"
+              className="flex w-full justify-center mb-5 ml-1 bg-primer4 rounded-md px-3 py-1.5 text-sm font-semibold leading-6 text-black0 shadow-xl hover:scale-105 hover:shadow-lg  hover:bg-blue-500 hover:text-white0 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600  mb-3 width=120px;"
             >
               <span className="flex gap-3 items-center">
                 <Icon icon="cib:google" /> Google
@@ -247,7 +225,7 @@ export default function Register() {
             </button>
             <button
               type="submit"
-              className="flex w-full justify-center mb-5 ml-5 bg-blue-500 rounded-md px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:scale-105 hover:shadow-lg  hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600  width=120px;"
+              className="flex w-full justify-center mb-5 ml-5 bg-primer4 rounded-md px-3 py-1.5 text-sm font-semibold leading-6 text-black0 shadow-xl hover:scale-105 hover:shadow-lg  hover:bg-blue-500 hover:text-white0 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600  width=120px;"
             >
               <span className="flex gap-3 items-center">
                 <Icon icon="entypo-social:facebook-with-circle" /> Facebook
