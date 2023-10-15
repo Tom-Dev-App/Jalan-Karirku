@@ -1,24 +1,14 @@
-'user client'
+'use client'
 import Image from 'next/image'
 import Button from '../components/Btn'
 import Footer from '../components/footer'
 import Accordion from '../components/accordion'
+import Navbar from '../components/navbar'
+import Mybanner from '../components/banner'
+import TestimonialCarousel from '../components/TestimonialCarousel'
 export default function Dashboard() {
 
-        // const carousel = document.getElementById('testimonial-carousel');
-        // let currentIndex = 0;
-
-        // function scrollCarousel() {
-        //     currentIndex += 2;
-        //     if (currentIndex >= carousel.children.length) {
-        //         currentIndex = 0;
-        //     }
-        //     const translateX = -currentIndex * (carousel.offsetWidth / 2);
-        //     carousel.style.transform = `translateX(${translateX}px)`;
-        // }
-
-        // setInterval(scrollCarousel, 3000); 
-
+    // <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
   const FAQ = [
     {
       title: "What is meant by soft skill development?",
@@ -38,63 +28,16 @@ export default function Dashboard() {
     },
     {
       title: "How can I enroll in this program?",
-      content: "How can I enroll in this program?"
+      content: "You can enroll by visiting our website and following the registration procedures outlined there. We are ready to assist you in starting your journey towards successful soft skill development and career counseling."
     }
 
   ]
   return (
     <>
+    <Navbar/>
     <div className='text-primer1 font-roboto'>
-        <div id="default-carousel" className="relative mx-[128px] my-[56px]" data-carousel="slide">
-            <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
-                <div className="hidden duration-700 ease-in-out" data-carousel-item>
-                    <Image src={"/assets/img/fuywrq.png"} width="0"
-                    height="0"
-                    sizes="100vw"
-                    style={{ width: '100%', height: 'auto' }} className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt={"..."} loading="eager"/>
-                </div>
-                <div className="hidden duration-700 ease-in-out" data-carousel-item>
-                    <Image src={"/assets/img/business-facebook-cover-.png"} width="0"
-                    height="0"
-                    sizes="100vw"
-                    style={{ width: '100%', height: 'auto' }} className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt={"..."} loading="eager"/>
-                </div>
-                <div className="hidden duration-700 ease-in-out" data-carousel-item>
-                    <Image src={"/assets/img/business_facebook_cover_banner_18.png"} width="0"
-                    height="0"
-                    sizes="100vw"
-                    style={{ width: '100%', height: 'auto' }} className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt={"..."} loading="eager"/>
-                </div>
-                <div className="hidden duration-700 ease-in-out" data-carousel-item>
-                    <Image src={"/assets/img/4995921.png"} width="0"
-                    height="0"
-                    sizes="100vw"
-                    style={{ width: '100%', height: 'auto' }} className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt={"..."} loading="eager"/>
-                </div>
-            </div>
-            <div className="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
-                <button type="button" className="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-                <button type="button" className="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-                <button type="button" className="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
-                <button type="button" className="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
-            </div>
-            <button type="button" className="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-                <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                    <svg className="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
-                    </svg>
-                    <span className="sr-only">Previous</span>
-                </span>
-            </button>
-            <button type="button" className="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-                <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                    <svg className="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
-                    </svg>
-                    <span className="sr-only">Next</span>
-                </span>
-            </button>
-        </div>
+
+        <Mybanner/>
 
         <div className="px-[128px] py-[56px] flex flex-col gap-[24px] items-center bg-primer4">
             <div className="flex flex-row justify-center items-center gap-[8px]">
@@ -138,69 +81,8 @@ export default function Dashboard() {
                 </div>
             </div>
         </div>
-        
-        <div className="overflow-hidden mx-[128px] w-[1184px] my-[64px] flex flex-col justify-center items-center gap-[40px]">
-            <div className="flex flex-col justify-center items-center gap-[8px]">
-                <p>Testimonial</p>
-                <h3 className="text-[32px] font-bold">Check what they say</h3>
-            </div>
-            <div className="caousel-container overflow-hidden relative max-w-full">
-                <div id="testimonial-carousel" className="carousel flex">
-                    <div className="testimonial last:mr-0 w-1/2 mx-4 px-[24px] py-[24px] h-[332px] shadow-xl flex justify-between items-start gap-[24px] bg-primer4 rounded-[16px]">
-                        <div className="w-[200px] flex flex-col gap-[24px]">
-                            <Image src={"/assets/img/testtimonial1.png"} width="0"
-                            height="0"
-                            sizes="100vw"
-                            style={{ width: '100%', height: 'auto' }}  alt={""} loading="eager"/>
-                            <div className="flex flex-col gap-[8px]">
-                                <p className="font-bold">Darrell Steward</p>
-                                <p>Engineering Student</p>
-                            </div>
-                        </div>
-                        <p className="w-[290px]">"The soft skill development program has transformed the way I interact and work within teams. I've learned strong communication skills and leadership abilities that have made me more effective in my college projects. It's a crucial step towards my career success."</p>
-                    </div>
-                    <div className="testimonial last:mr-0 w-1/2 mx-4 px-[24px] py-[24px] h-[332px] shadow-xl flex justify-between items-start gap-[24px] bg-primer4 rounded-[16px]">
-                        <div className="w-[200px] flex flex-col gap-[24px]">
-                            <Image src={"/assets/img/testtimonial2.png"} width="0"
-                            height="0"
-                            sizes="100vw"
-                            style={{ width: '100%', height: 'auto' }}  alt={""} loading="eager"/>
-                            <div className="flex flex-col gap-[8px]">
-                                <p className="font-bold">Arlene McCoy</p>
-                                <p>High School Student</p>
-                            </div>
-                        </div>
-                        <p className="w-[290px]">"As a high school student, I initially thought career development was something for college and beyond. However, participating in the soft skill development program and attending career webinars on this platform has opened my eyes to the importance of early career planning. I've gained valuable skills and insights that will undoubtedly benefit my future educational and professional journey."</p>
-                    </div>
-                    <div className="testimonial last:mr-0 w-1/2 mx-4 px-[24px] py-[24px] h-[332px] shadow-xl flex justify-between items-start gap-[24px] bg-primer4 rounded-[16px]">
-                        <div className="w-[200px] flex flex-col gap-[24px]">
-                            <Image src={"/assets/img/testtimonial3.png"} width="0"
-                            height="0"
-                            sizes="100vw"
-                            style={{ width: '100%', height: 'auto' }}  alt={""} loading="eager"/>
-                            <div className="flex flex-col gap-[8px]">
-                                <p className="font-bold">Eleanor Pena</p>
-                                <p>Project Manager</p>
-                            </div>
-                        </div>
-                        <p className="w-[290px]">"The career counseling I received here has truly transformed my outlook on career development. I now have a clear plan and a better understanding of how to reach my long-term goals. My counselor was incredibly knowledgeable and helpful."</p>
-                    </div>
-                    <div className="testimonial last:mr-0 w-1/2 mx-4 px-[24px] py-[24px] h-[332px] shadow-xl flex justify-between items-start gap-[24px] bg-primer4 rounded-[16px]">
-                        <div className="w-[200px] flex flex-col gap-[24px]">
-                            <Image src={"/assets/img/testtimonial4.png"} width="0"
-                            height="0"
-                            sizes="100vw"
-                            style={{ width: '100%', height: 'auto' }}  alt={""} loading="eager"/>
-                            <div className="flex flex-col gap-[8px]">
-                                <p className="font-bold">Jane Cooper</p>
-                                <p>College Student</p>
-                            </div>
-                        </div>
-                        <p className="w-[290px]">"Being a college student can be overwhelming with academic pressures and future uncertainties. The career counseling I received through this platform has been a game-changer. It helped me align my academic path with my long-term career goals and gave me the confidence to pursue internships and opportunities that will shape my future. I'm incredibly grateful for the guidance I've received."</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+
+        <TestimonialCarousel/>
 
         <div className="px-[128px] py-[56px] flex flex-col  gap-[40px]">
             <h3 className="text-[32px] font-bold text-center">Frequently Asked Questions</h3>

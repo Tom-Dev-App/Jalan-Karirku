@@ -1,4 +1,4 @@
-'user client'
+'use client'
 import React from 'react'
 import Image from 'next/image'
 import Button from '../components/Btn'
@@ -18,7 +18,7 @@ export default function DetailMyclass () {
             <div className="flex flex-col gap-4 items-start justify-center">
                 <h2 className="text-[42px] font-bold">Effective Communication Skills</h2>
                 <div className="flex gap-[8px]">
-                    <Icon icon="material-symbols:library-books-rounded" className='text-primer1'/>
+                    <Icon icon="material-symbols:library-books-rounded" className='text-primer1' style={{ fontSize: '24px' }}/>
                     <p className="text-[18px]">7 modul</p>
                 </div>
                 <Button type="link" className="btn-primary-lg text-center" href={"#"}>Start</Button>
