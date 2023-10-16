@@ -1,6 +1,8 @@
 'use client'
 import Footer from '../../components/footer'
+import Image from 'next/image'
 import Navbar from '../../components/navbar'
+import Button from '../../components/Btn'
 import { Icon } from '@iconify/react'
 
 export default function Detail() {
@@ -11,7 +13,10 @@ export default function Detail() {
       <div className='sm:cotainer md:container lg:container lg:py-14 lg:px-32'>
         <div className='flex flex-col'>
           <div className='flex justify-items-center items-center gap-12'>
-            <img className='pr-10' width="380px" height="auto" src="../assets/ilustration/Marriage counseling-amico.svg"></img>
+            <Image src={"../assets/ilustration/Marriage counseling-amico.svg"} width="0"
+                height="0"
+                sizes="100vw"
+                style={{ width: '320px', height: 'auto' }}  alt={""} loading="eager"/>
             <div className='columns-1'>
                 <h1 class="mb-4 text-4xl font-extrabold leading-none tracking-tight md:text-4xl lg:text-4xl sm:text-1xl" style={{color: '#0C356A'}}>Effective Communication Skills</h1>
                 <div className='flex flex-wrap items-center py-2 px-4'>
@@ -19,9 +24,7 @@ export default function Detail() {
                   <p className='px-4'>Rp. 1.125.000</p>
                 </div>
                 <div className='flex flex-wrap items-center py-4'>
-                    <button className='text-white rounded-lg py-2 px-12' style={{background:'#279EFF'}}>
-                      Buy
-                  </button>
+                    <Button type="link" className="btn-primary-lg" href={"#"}>Buy</Button>
                 </div>
             </div>
           </div>
@@ -45,9 +48,7 @@ export default function Detail() {
             <li>Consumers can arrange video sessions according to their convenience, allowing them to receive career guidance without leaving their homes.</li>
           </ul>
         </div>
-          <button className='text-white rounded-lg py-2 px-12 w-full' style={{background:'#279EFF'}}>
-            Buy
-          </button>
+          <Button type="link" className="btn-primary-lg text-center" href={"#"}>Buy</Button>
       </div>
     </section>
     <Footer/>

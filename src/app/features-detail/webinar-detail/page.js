@@ -1,6 +1,5 @@
 'use client'
-import Image from 'next/image'
-import Card from '../../components/card'
+import Button from '../../components/Btn'
 import Footer from '../../components/footer'
 import Navbar from '../../components/navbar'
 import { Icon } from '@iconify/react'
@@ -25,9 +24,7 @@ export default function Detail() {
                   <p className='px-4'>Rp. 100.000</p>
                 </div>
                 <div className='flex flex-wrap items-center py-4'>
-                    <button className='text-white rounded-lg py-2 px-12' style={{background:'#279EFF'}}>
-                      Buy
-                  </button>
+                    <Button type="link" className="btn-primary-lg" href={"#"}>Buy</Button>
                 </div>
             </div>
           </div>
@@ -60,9 +57,7 @@ export default function Detail() {
             <li>Any materials, handouts, or resources shared during the webinar are for personal use and may not be reproduced or distributed without permission.</li>
           </ul>
         </div>
-          <button className='text-white rounded-lg py-2 px-12 w-full' style={{background:'#279EFF'}}>
-            Buy
-          </button>
+          <Button type="link" className="btn-primary-lg text-center" href={"#"}>Buy</Button>
       </div>
     </section>
     <Footer/>
