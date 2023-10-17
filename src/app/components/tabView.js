@@ -21,7 +21,7 @@ const TabView = () => {
             <div id="tab1" className="tab-content" style={{ display: activeTab === 'tab1' ? 'block' : 'none' }}>            
                 <div className="flex flex-col gap-[32px]">
                     <div className="flex justify-between items-start">
-                        <div className="flex flex-col gap-[16px] items-start shadow-xl w-[337px]">
+                        <div className="flex flex-col gap-[16px] items-start shadow-xl w-[337px] rounded-[8px]">
                             <Image src={"/assets/ilustration/Effective Communication Skills.svg"} width="0"
                             height="0"
                             sizes="100vw"
@@ -30,7 +30,7 @@ const TabView = () => {
                                 <h4 className="text-[24px] font-bold">Effective Communication Skills</h4>
                                 <div className="flex flex-col gap-[16px]">
                                     <div className="flex gap-[8px] text-[14px] justify-between items-center">
-                                        <div className="flex gap-[8px]">
+                                        <div className="flex gap-[8px] pt-2">
                                             <Icon icon="material-symbols:library-books-rounded" className='text-primer1' style={{ fontSize: '24px' }}/>
                                             <p>7 modules</p>
                                         </div>
@@ -40,7 +40,7 @@ const TabView = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="flex flex-col gap-[16px] items-start shadow-xl w-[337px]">
+                        <div className="flex flex-col gap-[16px] items-start shadow-xl w-[337px] rounded-[8px]">
                             <Image src={"/assets/ilustration/Stress Management and Resilience.svg"} width="0"
                             height="0"
                             sizes="100vw"
@@ -48,8 +48,8 @@ const TabView = () => {
                             <div className="px-[16px] pb-[16px]">
                                 <h4 className="text-[24px] font-bold">Stress Management and Resilience</h4>
                                 <div className="flex flex-col gap-[16px]">
-                                    <div className="flex gap-[8px] text-[14px] justify-between items-center">
-                                        <div className="flex gap-[8px]">
+                                    <div className="flex pt-2 gap-[8px] text-[14px] justify-between items-center">
+                                        <div className="flex gap-[8px] ">
                                             <Icon icon="material-symbols:library-books-rounded" className='text-primer1' style={{ fontSize: '24px' }}/>
                                             <p>7 modules</p>
                                         </div>
@@ -59,7 +59,7 @@ const TabView = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="flex flex-col gap-[16px] items-start shadow-xl w-[337px]">
+                        <div className="flex flex-col gap-[16px] items-start shadow-xl w-[337px] rounded-[8px]">
                             <Image src={"/assets/ilustration/Ethical Decision-Making.svg"} width="0"
                             height="0"
                             sizes="100vw"
@@ -67,7 +67,7 @@ const TabView = () => {
                             <div className="px-[16px] pb-[16px]">
                                 <h4 className="text-[24px] font-bold">Ethical Decision-Making</h4>
                                 <div className="flex flex-col gap-[16px]">
-                                    <div className="flex gap-[8px] text-[14px] justify-between items-center">
+                                    <div className="flex pt-2 gap-[8px] text-[14px] justify-between items-center">
                                         <div className="flex gap-[8px]">
                                             <Icon icon="material-symbols:library-books-rounded" className='text-primer1' style={{ fontSize: '24px' }}/>
                                             <p>7 modules</p>
@@ -80,7 +80,7 @@ const TabView = () => {
                         </div>
                     </div>
                     <div className="flex justify-between items-start">
-                        <div className="flex flex-col gap-[16px] items-start shadow-xl w-[337px]">
+                        <div className="flex flex-col gap-[16px] items-start shadow-xl w-[337px] rounded-[8px]">
                             <Image src={"/assets/ilustration/Problem-Solving and Decision-Making.svg"} width="0"
                             height="0"
                             sizes="100vw"
@@ -88,8 +88,8 @@ const TabView = () => {
                             <div className="px-[16px] pb-[16px]">
                                 <h4 className="text-[24px] font-bold">Problem-Solving and Decision-Making</h4>
                                 <div className="flex flex-col gap-[16px]">
-                                    <div className="flex gap-[8px] text-[14px] justify-between items-center">
-                                        <div className="flex gap-[8px]">
+                                    <div className="flex pt-2 gap-[8px] text-[14px] justify-between items-center">
+                                        <div className="flex gap-[8px] ">
                                             <Icon icon="material-symbols:library-books-rounded" className='text-primer1' style={{ fontSize: '24px' }}/>
                                             <p>7 modules</p>
                                         </div>
@@ -105,15 +105,15 @@ const TabView = () => {
             <div id="tab2" className="tab-content" style={{ display: activeTab === 'tab2' ? 'block' : 'none' }}>
                 <div className="flex flex-col gap-[32px]">
                     <div className="flex justify-between items-start">
-                        <div className="flex flex-col gap-[16px] items-start shadow-xl w-[337px]">
+                        <div className="flex flex-col gap-[16px] items-start shadow-xl w-[337px] rounded-[8px]">
                             <Image src={"/assets/img/Effective Communication.png"} width="0"
                             height="0"
                             sizes="100vw"
                             style={{ width: '100%', height: 'auto' }}  alt={""} loading="eager"/>
                             <div className="px-[16px] pb-[16px]  w-[100%]">
                                 <h4 className="text-[24px] font-bold">Effective Communication</h4>
-                                <div className="flex text-[14px] justify-between items-center">
-                                    <div className="flex gap-[8px]">
+                                <div className="flex pt-2 text-[14px] justify-between items-center">
+                                    <div className="flex gap-[8px] ">
                                         <Icon icon="uiw:date" color="#0c356a" width="20" height="20" />
                                         <p>9/23/23 20:00</p>
                                     </div>
@@ -121,15 +121,15 @@ const TabView = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="flex flex-col gap-[16px] items-start shadow-xl w-[337px]">
+                        <div className="flex flex-col gap-[16px] items-start shadow-xl w-[337px] rounded-[8px]">
                             <Image src={"/assets/img/Stay Productive.png"} width="0"
                             height="0"
                             sizes="100vw"
                             style={{ width: '100%', height: 'auto' }}  alt={""} loading="eager"/>
                             <div className="px-[16px] pb-[16px]  w-[100%]">
                                 <h4 className="text-[24px] font-bold">Stay Productive</h4>
-                                <div className="flex text-[14px] justify-between items-center">
-                                    <div className="flex gap-[8px]">
+                                <div className="flex pt-2 text-[14px] justify-between items-center">
+                                    <div className="flex gap-[8px] ">
                                         <Icon icon="uiw:date" color="#0c356a" width="20" height="20" />
                                         <p>4/4/23 20:00</p>
                                     </div>
@@ -137,15 +137,15 @@ const TabView = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="flex flex-col gap-[16px] items-start shadow-xl w-[337px]">
+                        <div className="flex flex-col gap-[16px] items-start shadow-xl w-[337px] rounded-[8px]">
                             <Image src={"/assets/img/Creativity and Innovation.png"} width="0"
                             height="0"
                             sizes="100vw"
                             style={{ width: '100%', height: 'auto' }}  alt={""} loading="eager"/>
                             <div className="px-[16px] pb-[16px] w-[100%]">
                                 <h4 className="text-[24px] font-bold">Creativity and Innovation</h4>
-                                <div className="flex text-[14px] justify-between items-center">
-                                    <div className="flex gap-[8px]">
+                                <div className="flex pt-2 text-[14px] justify-between items-center">
+                                    <div className="flex gap-[8px] ">
                                         <Icon icon="uiw:date" color="#0c356a" width="20" height="20" />
                                         <p>11/7/23 20:00</p>
                                     </div>
@@ -155,14 +155,14 @@ const TabView = () => {
                         </div>
                     </div>
                     <div className="flex justify-between items-start">
-                        <div className="flex flex-col gap-[16px] items-start shadow-xl w-[337px]">
+                        <div className="flex flex-col gap-[16px] items-start shadow-xl w-[337px] rounded-[8px]">
                             <Image src={"/assets/img/Presentation Public Speaking.png"} width="0"
                             height="0"
                             sizes="100vw"
                             style={{ width: '100%', height: 'auto' }}  alt={""} loading="eager"/>
                             <div className="px-[16px] pb-[16px]  w-[100%]">
                                 <h4 className="text-[24px] font-bold">Presentation Public Speaking</h4>
-                                <div className="flex text-[14px] justify-between items-center">
+                                <div className="flex pt-2 text-[14px] justify-between items-center">
                                     <div className="flex gap-[8px]">
                                         <Icon icon="uiw:date" color="#0c356a" width="20" height="20" />
                                         <p>8/16/23 20:00</p>
