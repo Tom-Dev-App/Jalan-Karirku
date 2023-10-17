@@ -21,10 +21,8 @@ export default function Register() {
         </Link>
       </div>
 
-      <div className='flex items-center flex-col'>
-        <h1 className="font-bold text-[54px] mt-[40px] text-center">
-          Sign Up
-        </h1>
+      <div className="flex items-center flex-col">
+        <h1 className="font-bold text-[54px] mt-[40px] text-center">Sign Up</h1>
         <p className="p-4 roudned-2 mt-[24px] w-[640px] bg-primer4 inline-block text-center">
           Create your account Jalan Karirku and get first access to the very
           best of Jalan Karirku service
