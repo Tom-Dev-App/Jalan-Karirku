@@ -1,4 +1,4 @@
-import React from 'react';
+"use client"
 import Image from 'next/image';
 import { Icon } from '@iconify/react';
 import Button from '../components/Btn';
