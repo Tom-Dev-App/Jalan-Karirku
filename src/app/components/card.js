@@ -1,4 +1,4 @@
-'user client';
+
 import React from 'react';
 import { PropTypes } from 'prop-types';
 import { Icon } from '@iconify/react';
@@ -13,8 +13,7 @@ export default function Card({
   description,
   isPaid = false,
   isPass = false,
-  href,
-  inProcess,
+  inProcess = false,
   slug
 }) {
   if (isPaid === true && inProcess === false) {
@@ -51,9 +50,8 @@ export default function Card({
         </p>
         <div className="mx-4 mb-4 flex justify-center items-center">
           <Button
-            type="link"
+            type="button"
             className="btn-primary-sm w-[100%] text-center"
-            href={href}
           >
             Start
           </Button>
@@ -195,7 +193,6 @@ Card.propTypes = {
   header: PropTypes.string,
   modules: PropTypes.number,
   price: PropTypes.string,
-  href: PropTypes.string,
   description: PropTypes.string,
   src: PropTypes.string,
   slug: PropTypes.string,

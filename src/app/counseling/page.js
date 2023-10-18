@@ -9,7 +9,7 @@ import { counseling } from '@/data';
 export default function CounselingPage() {
   return (
     <>
-      <Navbar />
+      <Navbar auth={true} />
       <div className="w-1440 h-432 bg-primer4 flex items-center justify-between gap-6 px-[128px] py-[56px]">
         <Image
           src="/assets/ilustration/Marriage counseling-amico.svg"

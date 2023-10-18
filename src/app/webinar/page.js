@@ -10,7 +10,7 @@ import WebinarCard from '../components/webinarCard'
 export default function WebinarPage () {
     return (
     <>
-    <Navbar/>
+    <Navbar auth={true}/>
         <div className="w-1440 h-432 bg-primer4 flex items-center justify-between gap-6 px-[128px] py-[56px]">
             <Image src={"/assets/ilustration/Webinar-amico.svg"} 
             width="0"

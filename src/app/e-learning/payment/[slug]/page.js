@@ -11,7 +11,7 @@ export default function CheckoutElearning ({params}) {
     const academyClass = academy.find((academi) => academi.slug === slug);
     return (
     <>
-    <Navbar/>
+    <Navbar auth={true}/>
               <div className='flex justify-between gap-10 items-start px-[128px] py-[56px]'>
             <div className='flex flex-col gap-6 items-start w-[70%]'>
                 <div className='flex flex-col gap-4'>

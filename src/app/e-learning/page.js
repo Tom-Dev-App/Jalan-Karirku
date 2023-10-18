@@ -10,7 +10,7 @@ import Footer from '../components/footer'
 export default function ELearning() {
   return (
     <>
-         <Navbar/>
+         <Navbar auth={true}/>
         <div className="w-1440 h-432 bg-primer4 flex items-center justify-between gap-6 px-[128px] py-[56px]">
             <Image src={"/assets/ilustration/elearning spft skills.svg"} 
             width="0"

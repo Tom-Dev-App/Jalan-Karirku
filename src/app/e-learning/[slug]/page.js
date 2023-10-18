@@ -25,7 +25,7 @@ export default function Detail({params}) {
                 <h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tight md:text-4xl lg:text-4xl sm:text-1xl" style={{color: '#0C356A'}}>{academyClass.title}</h1>
                 <div className='flex flex-wrap items-center px-4'>
                   <Icon icon="material-symbols:library-books-rounded" width={'24px'}  className='text-primer1'/>
-                  <p className='px-4'>{`${academyClass.module} Modul`}</p>
+                  <p className='px-4'>{`${academyClass.modules} Modul`}</p>
                 </div>
                 <div className='flex flex-wrap items-center py-2 px-4'>
                   <Icon icon="bx:purchase-tag" width={'24px'} className='text-primer1'/>

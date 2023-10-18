@@ -2,25 +2,28 @@
 import React from 'react'
 import Image from 'next/image'
 import Button from '../components/btn'
-import TabView from '../components/tabView'
 import { Icon } from '@iconify/react'
 import Navbar from '../components/navbar'
 import Footer from '../components/footer'
+import Link from 'next/link'
+import dynamic from 'next/dynamic'
+ 
+const TabViewNoSSR = dynamic(() => import('../components/tabView'), { ssr: false })
 export default function ProfilePage () {
     return (
     <>
-    <Navbar/>
+    <Navbar auth={true}/>
     <div className="px-[128px] py-[64px] bg-primer4 flex justify-between items-center">
         <Image src={"/assets/img/Ellipse 2.png"} width="0"
         height="0"
         sizes="100vw"
         style={{ width: '320px', height: 'auto' }} alt={""} loading="eager"/>
-        <a href=''>
+        <Link href='/dashboard/profile-setting'>
         <Image src={"/assets/img/edit.png"} width="0"
         height="0"
         sizes="100vw"
         style={{ width: '100px', height: 'auto' }} className="absolute top-[380px] left-[350px]" alt={""} loading="eager"/>
-        </a> 
+        </Link> 
         <div className="w-[800px] flex flex-col gap-[16px] text-primer1 items-start">
             <h1 className="text-[54px] font-bold">Brooklyn Simmons</h1>
             <div className="flex gap-[24px]">
@@ -38,7 +41,7 @@ export default function ProfilePage () {
         </div>
     </div>
 
-    <TabView/>
+    <TabViewNoSSR/>
 
     <Footer/>
     </>

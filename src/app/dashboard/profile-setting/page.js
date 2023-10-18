@@ -1,12 +1,13 @@
 'use client'
+import Footer from '@/app/components/footer'
+import Navbar from '@/app/components/navbar'
+import SettingProfile from '@/app/components/settingProfile'
 import React from 'react'
-import Navbar from '../components/navbar'
-import Footer from '../components/footer'
-import SettingProfile from '../components/settingProfile'
+
 export default function ProfileSetting () {
     return (
     <>
-    <Navbar/>
+    <Navbar auth={true}/>
     
     <SettingProfile/>
 

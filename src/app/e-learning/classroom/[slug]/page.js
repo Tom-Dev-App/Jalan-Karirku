@@ -21,7 +21,7 @@ export default function Classroom({ params }) {
 
   return (
     <>
-      <Navbar />
+      <Navbar auth={true}/>
       <main className="px-[128px] py-14 mx-auto">
 <section className='flex items-center justify-between'>
           <div className="flex items-center min-w-[180px]">

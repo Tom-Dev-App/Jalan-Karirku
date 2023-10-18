@@ -12,7 +12,7 @@ export default function Detail({ params }) {
 
   return (
     <>
-      <Navbar />
+      <Navbar auth={true}/>
 
       <section style={{ background: '#D5E5F2' }}>
         <div className="sm:container md:container lg:container lg:py-14 lg:px-32">
