@@ -26,14 +26,13 @@ export default function WebinarPage () {
 
         <h1 className="text-primer1 text-[32px] font-bold text-center mx-[128px] mt-[56px]">Unlock your path to career success through our enriching Career Webinar package - your gateway to invaluable insights and professional growth.</h1>
 
-        <div className='px-[128px] py-[56px] flex flex-col gap-10 justify-between'>
+        <div className='px-[128px] py-[56px] relative flex flex-wrap gap-10 justify-between'>
             {
                 webinar.map(web => 
                 <WebinarCard key={web.slug} img={{src: web.imgLink, alt: web.slug}} datetime={web.datetime} header={web.title} price={web.price} slug={web.slug}/>
                     )
             }
         </div>
-
     <Footer/>
     </>
   )

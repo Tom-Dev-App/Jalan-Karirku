@@ -1,10 +1,11 @@
 'use client'
 import React from 'react'
+
+import { academy } from '@/data'
 import Navbar from '../components/navbar'
 import Image from 'next/image'
-import Footer from '../components/footer'
 import Card from '../components/card'
-import { academy } from '@/data'
+import Footer from '../components/footer'
 
 export default function ELearning() {
   return (
@@ -25,11 +26,10 @@ export default function ELearning() {
 
         <h1 className="text-primer1 text-[32px] font-bold text-center mx-[128px] mt-[56px]">Unlock your full potential and enhance your career prospects with our comprehensive Soft Skills Training Package. Invest in your personal and professional growth today!</h1>
 
-        <div className='px-[128px] py-[56px] flex flex-col gap-10 justify-between'>
-            {academy.map((academi) => {
-                <Card isPaid={false} isPass={false} inProcess={false} header={academi.title} modules={academi.modules} slug={academi.slug} price={academi.price} />
-            })}
-
+        <div className='px-[128px] py-[56px] flex flex-wrap gap-10 justify-between'>
+              {academy.map((academi) => (
+    <Card isPaid={false} isPass={false} inProcess={false} header={academi.title} modules={academi.modules} slug={academi.slug} price={academi.price} key={academi.slug} src={academi.imgLink}/>
+  ))}
         </div>
     <Footer/>
     </>

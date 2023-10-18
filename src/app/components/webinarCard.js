@@ -10,16 +10,16 @@ export default function WebinarCard({
   datetime,
   price,
   slug,
+  src,
 }) {
 
   return (
-    <Link href={`/webinar/${slug}`}>
-            <div className="flex justify-between items-start">
+    <Link href={`/webinar/${slug}`} >
                 <div className="flex flex-col gap-[16px] items-start shadow-xl w-[337px] rounded-[8px]">
                             <Image src={`${img.src}`} width="0"
                             height="0"
                             sizes="100vw"
-                            style={{ width: '100%', height: 'auto' }}  alt={`${src.alt}`} loading="eager"/>
+                            style={{ width: '100%', height: 'auto' }}  alt={(`${img.alt}` ?? "")} loading="eager"/>
                             <div className="px-[16px] pb-[16px]">
                                 <h4 className="text-[24px] font-bold">{header}</h4>
                                 <div className="flex flex-col pt-2 gap-[8px] text-[14px] items-start">
@@ -33,7 +33,6 @@ export default function WebinarCard({
                                     </div>
                                 </div>
                             </div>
-                </div>
                 </div>
     </Link>
   );

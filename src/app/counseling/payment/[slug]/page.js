@@ -1,6 +1,6 @@
 'use client'
 import React from 'react';
-import Button from '@/app/components/Btn';
+import Button from '@/app/components/btn';
 import Footer from '@/app/components/footer';
 import Navbar from '@/app/components/navbar';
 import { counseling } from '@/data';

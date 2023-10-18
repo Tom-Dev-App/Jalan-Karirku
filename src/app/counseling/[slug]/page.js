@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { Icon } from '@iconify/react';
 import Navbar from '../../components/navbar';
 import Footer from '../../components/footer';
-import Button from '../../components/Btn';
+import Button from '../../components/btn';
 import { counseling } from '@/data';
 
 export default function Detail({ params }) {

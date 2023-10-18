@@ -1,9 +1,13 @@
 'use client'
 
+import Button from "@/app/components/btn";
+import Footer from "@/app/components/footer";
+import Navbar from "@/app/components/navbar";
 import { webinar } from "@/data";
+import { Icon } from "@iconify/react";
 
 
-export default function WebinarDetail() {
+export default function WebinarDetail({params}) {
     const slug = params.slug;
     const webinarEvent = webinar.find((web) => web.slug === slug);
   return (
@@ -15,7 +19,7 @@ export default function WebinarDetail() {
           <div className='flex items-center gap-12'>
             <img className='flex flex-shrink-0' src={webinarEvent.imgLink}/>
             <div className='columns-1'>
-                <h1 class="mb-4 text-4xl font-extrabold leading-none tracking-tight md:text-4xl lg:text-4xl sm:text-sm" style={{color: '#0C356A'}}>{webinarEvent.title}</h1>
+                <h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tight md:text-4xl lg:text-4xl sm:text-sm" style={{color: '#0C356A'}}>{webinarEvent.title}</h1>
                 <div className='flex flex-wrap items-center px-4'>
                   <Icon icon="uiw:date" width={'24px'}  className='text-primer1'/>
                   <p className='px-4'>{webinarEvent.datetime}</p>
@@ -42,8 +46,8 @@ export default function WebinarDetail() {
           <h1 className='text-2xl font-extrabold'>Benefit</h1>
           <ul className='list-disc px-6'>
             {
-                webinarEvent.description.benefit.map((ben, index)=>
-                <li key={index}>{ben}</li>
+                webinarEvent.description.benefit.map((ben, index) =>(
+                <li key={index}>{ben}</li>)
                 )
             }
           </ul>

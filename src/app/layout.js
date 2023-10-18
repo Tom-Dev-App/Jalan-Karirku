@@ -23,6 +23,7 @@ export default function RootLayout({ children, pageTitle }) {
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>{pageTitle ?? 'Jalankarirku'}</title>
+        <link rel="icon" href="/assets/img/logo light.png" />
       </Head>
       <body className={roboto.className}>{children}</body>
     </html>

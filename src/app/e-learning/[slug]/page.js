@@ -1,5 +1,5 @@
 'use client'
-import Button from "@/app/components/Btn"
+import Button from "@/app/components/btn"
 import Footer from "@/app/components/footer"
 import Navbar from "@/app/components/navbar"
 import { academy } from "@/data"
@@ -22,7 +22,7 @@ export default function Detail({params}) {
                 sizes="100vw"
                 style={{ width: 'auto', height: '320px' }}  alt={`${academyClass.title}`} loading="eager"/>
             <div className='columns-1'>
-                <h1 class="mb-4 text-4xl font-extrabold leading-none tracking-tight md:text-4xl lg:text-4xl sm:text-1xl" style={{color: '#0C356A'}}>{academyClass.title}</h1>
+                <h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tight md:text-4xl lg:text-4xl sm:text-1xl" style={{color: '#0C356A'}}>{academyClass.title}</h1>
                 <div className='flex flex-wrap items-center px-4'>
                   <Icon icon="material-symbols:library-books-rounded" width={'24px'}  className='text-primer1'/>
                   <p className='px-4'>{`${academyClass.module} Modul`}</p>
@@ -42,16 +42,17 @@ export default function Detail({params}) {
     <section>
       <div className='lg:py-14 lg:px-32 flex flex-col gap-8'>
         <div className='flex flex-col gap-4'>
-          <h1 className='text-2xl font-extrabold'>About class</h1>
-          <p className='text-1xl break-words'>{academyClass.description}</p>
+          <h1 className='text-2xl font-extrabold'>About Class</h1>
+          <p className='text-1xl break-words'>{academyClass.about}</p>
         </div>
         <div className='flex flex-col items-start gap-4'>
           <h1 className='text-2xl font-extrabold'>Benefit</h1>
           <ul className='list-disc px-6'>
         {
-            academyClass.description.benefit.map((ben, index) => 
-                <li>{ben}</li>
-            )
+            academyClass.benefit.map((ben, index) => (
+  <li key={index}>{ben}</li>
+))
+
         }
 
           </ul>

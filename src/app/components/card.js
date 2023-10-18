@@ -3,10 +3,10 @@ import React from 'react';
 import { PropTypes } from 'prop-types';
 import { Icon } from '@iconify/react';
 import Image from 'next/image';
-import Button from './Btn';
+import Button from './btn';
 import Link from 'next/link';
 export default function Card({
-  img,
+  src,
   header,
   modules,
   price,
@@ -23,12 +23,12 @@ export default function Card({
       <div className="inline-flex flex-col gap-4 rounded-[8px] shadow-xl max-w-[337px] overflow-hidden">
         <div className="relative w-full">
           <Image
-            src={img.src}
+            src={src}
             width="0"
             height="0"
             sizes="100vw"
             style={{ width: '100%', height: 'auto' }}
-            alt={img.alt}
+            alt={(header ?? "")}
             loading="eager"
           />
         </div>
@@ -69,12 +69,12 @@ export default function Card({
       <div className="inline-flex flex-col gap-4 rounded-[8px] shadow-xl max-w-[337px] overflow-hidden">
         <div className="relative w-full">
           <Image
-            src={img.src}
+            src={src}
             width="0"
             height="0"
             sizes="100vw"
             style={{ width: '100%', height: 'auto' }}
-            alt={img.alt}
+            alt={(header ?? "")}
             loading="eager"
           />
         </div>
@@ -110,12 +110,12 @@ export default function Card({
       <div className="inline-flex flex-col gap-4 rounded-[8px] shadow-xl max-w-[337px] overflow-hidden">
         <div className="relative w-full">
           <Image
-            src={img.src}
+            src={src}
             width="0"
             height="0"
             sizes="100vw"
             style={{ width: '100%', height: 'auto' }}
-            alt={img.alt}
+            alt={header ?? ""}
             loading="eager"
           />
         </div>
@@ -151,12 +151,12 @@ export default function Card({
       <div className="inline-flex flex-col gap-4 rounded-[8px] shadow-xl max-w-[337px] overflow-hidden">
         <div className="relative w-full">
           <Image
-            src={img.src}
+            src={src}
             width="0"
             height="0"
             sizes="100vw"
             style={{ width: '100%', height: 'auto' }}
-            alt={img.alt}
+            alt={(header ?? "")}
             loading="eager"
           />
         </div>
@@ -197,6 +197,6 @@ Card.propTypes = {
   price: PropTypes.string,
   href: PropTypes.string,
   description: PropTypes.string,
-  img: PropTypes.object,
+  src: PropTypes.string,
   slug: PropTypes.string,
 };

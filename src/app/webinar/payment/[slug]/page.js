@@ -1,12 +1,13 @@
 'use client'
 
-import Button from "@/app/components/Btn"
+import Button from "@/app/components/btn"
 import Footer from "@/app/components/footer"
 import Navbar from "@/app/components/navbar"
+import { webinar } from "@/data"
 import calculatePlusTax from "@/utils/calculatePlusTax"
 import { Icon } from "@iconify/react"
 
-export default function CheckoutWebinar () {
+export default function CheckoutWebinar ({params}) {
     const slug = params.slug;
     const webinarEvent = webinar.find((web) => web.slug === slug);
     return (
@@ -29,10 +30,11 @@ export default function CheckoutWebinar () {
                     <h4 className='text-[24px] font-bold'>Benefit</h4>
                     <ul className="list-disc">
                         {
-                          webinarEvent.description.benefit.map((ben, index) => {
-                            <li key={index}>{ben}</li>
-                          })  
-                        }
+                    webinarEvent.description.benefit.map((ben, index) => (
+                        <li key={index}>{ben}</li>
+                    ))
+                    }
+
                     </ul>
                 </div>
             </div>
@@ -61,7 +63,7 @@ export default function CheckoutWebinar () {
                 </div>
                 <div className='flex flex-col gap-2 w-full px-4'>
                     <div className='flex flex-col gap-2 justify-between'>
-                        <label for="whatsapp" className="block text-[18px]">WhatsApp Number</label>
+                        <label htmlFor="whatsapp" className="block text-[18px]">WhatsApp Number</label>
                         <div className='flex gap-2'>
                             <input type="tel" name="whatsapp" id="whatsapp" className="focus:ring-indigo-500 focus:border-indigo-500 block w-full pl-3 pr-12 py-2 sm:text-sm border-gray-900 rounded-lg" placeholder="+62 123-456-7890"/>
                             <div className="tooltip" data-tip="This number will be used as a communication channel for Jalan Karirku to you">  

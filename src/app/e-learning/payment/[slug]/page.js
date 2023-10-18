@@ -1,5 +1,5 @@
 'use client'
-import Button from '@/app/components/Btn'
+import Button from '@/app/components/btn'
 import Footer from '@/app/components/footer'
 import Navbar from '@/app/components/navbar'
 import { academy } from '@/data'
@@ -18,20 +18,20 @@ export default function CheckoutElearning ({params}) {
                     <h2 className='text-[42px] font-bold'>{academyClass.title}</h2>
                     <div className='flex gap-2'>
                         <Icon icon="bx:purchase-tag" className='text-black0' style={{ fontSize: '32px' }}/>
-                        <span className='text-[24px] font-bold'>{`Rp.${academyClass.toLocaleString('id-ID')}`}</span>
+                        <span className='text-[24px] font-bold'>{`Rp.${academyClass.price.toLocaleString('id-ID')}`}</span>
                     </div>
                 </div>
                 <div className='flex flex-col gap-4'>
                     <h4 className='text-[24px] font-bold'>About training</h4>
-                    <p>{academyClass.description.about}</p>
+                    <p>{academyClass.about}</p>
                 </div>
                 <div className='flex flex-col gap-4'>
                     <h4 className='text-[24px] font-bold'>Benefit</h4>
                     <ul className="list-disc">
                         
                         {
-                            academyClass.description.benefit((ben, index) => 
-                                <li key={index}>{ben}</li>
+                            academyClass.benefit.map((ben, index) =>( 
+                                <li key={index}>{ben}</li>)
                             )
                         }
                     </ul>
@@ -62,7 +62,7 @@ export default function CheckoutElearning ({params}) {
                 </div>
                 <div className='flex flex-col gap-2 w-full px-4'>
                     <div className='flex flex-col gap-2 justify-between'>
-                        <label for="whatsapp" className="block text-[18px]">WhatsApp Number</label>
+                        <label htmlFor="whatsapp" className="block text-[18px]">WhatsApp Number</label>
                         <div className='flex gap-2'>
                             <input type="tel" name="whatsapp" id="whatsapp" className="focus:ring-indigo-500 focus:border-indigo-500 block w-full pl-3 pr-12 py-2 sm:text-sm border-gray-900 rounded-lg" placeholder="+62 123-456-7890"/>
                             <div className="tooltip" data-tip="This number will be used as a communication channel for Jalan Karirku to you">  
