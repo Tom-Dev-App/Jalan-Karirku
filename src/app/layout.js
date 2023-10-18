@@ -12,7 +12,7 @@ const roboto = Roboto({
 export const metadata = {
   title: 'Jalankarirku',
   description:
-    'Sebuah platform untuk mengasah soft-skill dan mencari serta mengembangkan potensi diri agar bisa mendapatkan pekerjaan yang sesuai dengan minat dan bakat.',
+    'JalanKarirku bertujuan untuk membimbing generasi muda (usia 17-25 tahun) dalam memahami dunia kerja, mengatasi ketidakpastian dalam pemilihan karier, dan mengembangkan soft skills yang diperlukan. Ini mencakup konsultasi karier, webinar, dan kelas online. Dengan bimbingan ahli, wawasan industri, dan pelatihan keterampilan, JalanKarirku memberikan solusi konkret untuk mengatasi kesulitan dan ketidakpastian yang dihadapi oleh fresh graduate dalam memasuki dunia kerja, sehingga mereka dapat mempersiapkan diri dengan baik, membuat keputusan yang lebih baik, dan mencapai kesuksesan karier.',
 };
 
 

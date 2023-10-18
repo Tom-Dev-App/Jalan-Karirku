@@ -67,9 +67,9 @@ export const academy = [
                 "Identifying Areas for Improvement",
                 "Measuring Abilities" 
             ] ,
-        class: [
+        classOnline: [
             {
-                videoLink: "https://www.youtube.com/watch?v=W-4IcNJIyM8",
+                videoLink: "https://www.youtube.com/embed/W-4IcNJIyM8?si=a4veF2BzlTBrhqRx",
                 videoTitle: "Introduction to Effective Communication",
                 script: ["Effective communication is a fundamental skill that underpins success in various aspects of life, both personally and professionally. It serves as the cornerstone of building meaningful relationships, resolving conflicts, and achieving objectives in the workplace. In this module, we will explore the essential concepts and principles of effective communication to help you become a more skilled and proficient communicator.",
                         "Key Points:",
@@ -83,7 +83,7 @@ export const academy = [
                         "By delving into these foundational concepts of effective communication, you will develop the skills necessary to communicate with clarity, empathy, and precision in various settings, setting you on the path to becoming a more proficient communicator."]
             },
             {
-                videoLink: "https://www.youtube.com/watch?v=7wUCyjiyXdg",
+                videoLink: "https://www.youtube.com/embed/7wUCyjiyXdg?si=KmlXeh2PHfr8LkO8",
                 videoTitle: "Active Listening",
                 script: ["Active listening is a critical component of effective communication, facilitating meaningful and constructive interactions. It goes beyond merely hearing words; it involves a focused effort to understand the speaker's message, emotions, and underlying intentions. In this module, we will explore the significance of active listening and learn strategies to become better active listeners.",
                         "Key Points:",
@@ -163,14 +163,14 @@ export const academy = [
                     "Mental resilience",
                     "Improved quality of life"
             ] ,
-        class: [
+        classOnline: [
             {
-                videoLink: "https://youtu.be/qVGpKPEPme0?si=UUeY9b5rPfg9SSfn",
+                videoLink: "https://www.youtube.com/embed/qVGpKPEPme0?si=Zghbp1-JKaJaXSCo",
                 videoTitle: "Stress Management",
                 script: "This module is designed to help individuals manage stress in their everyday lives. Stress is the body's natural response to challenging situations, but too much stress or a lack of stress management can negatively impact physical and mental well-being. This module provides an explanation of what stress is, how it affects the body and mind, and concrete strategies for reducing and managing stress. Participants will learn meditation techniques, deep breathing, physical exercises, and how to identify stress triggers in their lives. The module aims to increase self-awareness and provide practical skills for coping with stress."
             },
             {
-                videoLink: "https://youtu.be/dU53bCvb-1c?si=mV00soplyEyXd0LG",
+                videoLink: "https://www.youtube.com/embed/dU53bCvb-1c?si=xP3aLI_Oj2_nTbzn",
                 videoTitle: "Resilience",
                 script: "This module focuses on developing individual resilience, which is the ability to recover and adapt after experiencing pressure, challenges, or difficult changes. Resilience is an essential quality that helps individuals stay strong and positive when facing adversity. The module will explain the concept of resilience and why it is important. Participants will learn techniques to enhance their resilience, including building social support, developing positive thinking, and setting achievable goals. The module aims to provide participants with the tools and understanding they need to face challenges with confidence and composure."
             },
