@@ -45,7 +45,7 @@ export default function Login() {
             <form className="space-y-6" action="#" method="POST">
               <div>
                 <label
-                  for="username & email"
+                  htmlFor="username & email"
                   className="block text-sm font-medium leading-6 text-gray-900"
                 >
                   Username or Email
@@ -55,10 +55,11 @@ export default function Login() {
                     id="username"
                     type="text"
                     name="username"
-                    placeholder="input username or email you"
+                    placeholder="Enter your username..."
                     autoComplete="username"
                     required
-                    className="block pl-4 w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                    className="block pl-4 w-full rounded-md border-0 py-1.5 text-black0 shadow-sm ring-1 ring-gray2 placeholder:text-gray2 focus:ring-2 focus:ring-outline-primer-2 sm:text-sm sm:leading-6
+"
                   />
                 </div>
               </div>
@@ -66,7 +67,7 @@ export default function Login() {
               <div>
                 <div className="flex items-center justify-between">
                   <label
-                    for="password"
+                    htmlFor="password"
                     className="block text-sm font-medium leading-6 text-gray-900"
                   >
                     Password
@@ -77,15 +78,16 @@ export default function Login() {
                     id="password"
                     type="password"
                     name="password"
-                    placeholder="input password account you"
+                    placeholder="Enter your password here..."
                     autoComplete="password"
                     required
-                    className="block w-full pl-4 rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                    className="block pl-4 w-full rounded-md border-0 py-1.5 text-black0 shadow-sm ring-1 ring-gray2 placeholder:text-gray2 focus:ring-2 focus:ring-outline-primer-2 sm:text-sm sm:leading-6
+"
                   />
                   <div className="text-sm">
                     <a
                       href="#"
-                      className="font-semibold p-3 text-black text-primer2 hover:text-primer1 float-right text-right"
+                      className="font-semibold p-3  text-primer2 hover:text-primer1 float-right text-right"
                     >
                       {' '}
                       Forgot Password?
@@ -103,12 +105,12 @@ export default function Login() {
                 </button>
                 <p className="text-gray-500 mt-1 text-center">
                   Don't have an account yet?
-                  <a
+                  <Link
                     href="/auth/register"
                     className="text-primer2 font-semibold text-black-500 hover:animate-pulse inline-block ml-2"
                   >
                     Sign Up
-                  </a>
+                  </Link>
                 </p>
               </div>
 
@@ -124,15 +126,15 @@ export default function Login() {
                   className="flex w-full justify-center bg-primer4 rounded-md px-3 py-1.5 text-sm font-semibold leading-6 hover:bg-primer2 hover:text-white0 active:ring active-ring-gray2 mb-3 shadow-sm"
                 >
                   <span className="flex items-center gap-3">
-                    <Icon icon="cib:google" /> Google
+                    <Icon icon="flat-color-icons:google" /> Google
                   </span>
                 </button>
                 <button
                   type="submit"
-                  className="flex w-full justify-center bg-primer4 rounded-md px-3 py-1.5 text-sm font-semibold leading-6 text-black0 bg-primer3 hover:bg-primer2 hover:text-white0 active:ring active-ring-gray2 mb-3  shadow-sm"
+                  className="flex w-full justify-center bg-primer4 rounded-md px-3 py-1.5 text-sm font-semibold leading-6 hover:bg-primer2 hover:text-white0 active:ring active-ring-gray2 mb-3 shadow-sm"
                 >
                   <span className="flex items-center gap-3">
-                    <Icon icon="entypo-social:facebook-with-circle" /> Facebook
+                    <Icon icon="logos:facebook" /> Facebook
                   </span>
                 </button>
               </div>

@@ -33,7 +33,7 @@ export default function Register() {
         <form className="space-y-6">
           <div>
             <label
-              for="name"
+              htmlFor="name"
               className="block text-sm font-medium leading-6 text-gray-900"
             >
               Nama
@@ -42,19 +42,20 @@ export default function Register() {
               <input
                 id="name"
                 type="text"
-                name="username"
+                name="name"
                 required
                 pattern="[A-Z][a-zA-Z]*"
                 title="Masukan Nama dengan awalan huruf kapital"
                 autoComplete="name"
-                className="block pl-4 w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                placeholder='Enter your name...'
+                className="block pl-4 w-full rounded-md border-0 py-1.5 text-black0 shadow-sm ring-1 ring-gray2 placeholder:text-gray2 focus:ring-2 focus:ring-outline-primer-2 sm:text-sm sm:leading-6"
               />
             </div>
           </div>
 
           <div>
             <label
-              for="username"
+              htmlFor="username"
               className="block text-sm font-medium leading-6 text-gray-900"
             >
               Username
@@ -66,14 +67,15 @@ export default function Register() {
                 name="username"
                 autoComplete="username"
                 required
-                className="block pl-4 w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                placeholder='Enter your username...'
+                className="block pl-4 w-full rounded-md border-0 py-1.5 text-black0 shadow-sm ring-1 ring-gray2 placeholder:text-gray2 focus:ring-2 focus:ring-outline-primer-2 sm:text-sm sm:leading-6"
               />
             </div>
           </div>
 
           <div>
             <label
-              for="phone"
+              htmlFor="phone"
               className="block text-sm font-medium leading-6 text-gray-900"
             >
               Phone
@@ -86,15 +88,16 @@ export default function Register() {
                 autoComplete="phone"
                 required
                 pattern="^08\d{10}$"
+                placeholder='Enter your phone number...'
                 title="Masukan nomor hp dengan benar ex(081302023738)"
-                className="block pl-4 w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                className="block pl-4 w-full rounded-md border-0 py-1.5 text-black0 shadow-sm ring-1 ring-gray2 placeholder:text-gray2 focus:ring-2 focus:ring-outline-primer-2 sm:text-sm sm:leading-6"
               />
             </div>
           </div>
 
           <div>
             <label
-              for="email"
+              htmlFor="email"
               className="block text-sm font-medium leading-6 text-gray-900"
             >
               E-mail
@@ -106,14 +109,15 @@ export default function Register() {
                 name="email"
                 autoComplete="email"
                 required
-                className="block pl-4 w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                placeholder='Enter your email address...'
+                className="block pl-4 w-full rounded-md border-0 py-1.5 text-black0 shadow-sm ring-1 ring-gray2 placeholder:text-gray2 focus:ring-2 focus:ring-outline-primer-2 sm:text-sm sm:leading-6"
               />
             </div>
           </div>
 
           <div>
             <label
-              for="password"
+              htmlFor="password"
               className="block text-sm font-medium leading-6 text-gray-900"
             >
               Password
@@ -125,14 +129,15 @@ export default function Register() {
                 name="password"
                 autoComplete="password"
                 required
-                className="block pl-4 w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                placeholder='Enter your password...'
+                className="block pl-4 w-full rounded-md border-0 py-1.5 text-black0 shadow-sm ring-1 ring-gray2 placeholder:text-gray2 focus:ring-2 focus:ring-outline-primer-2 sm:text-sm sm:leading-6"
               />
             </div>
           </div>
 
           <div>
             <label
-              for="passwordconfir"
+              htmlFor="passwordconfir"
               className="block text-sm font-medium leading-6 text-gray-900"
             >
               Password Confirmation
@@ -142,67 +147,68 @@ export default function Register() {
                 id="passwordconfir"
                 type="password"
                 name="passwordconfir"
-                placeholder="input password confirmation account"
+                placeholder="Password confirm..."
                 autoComplete="password"
                 required
-                className="block pl-4 w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                className="block pl-4 w-full rounded-md border-0 py-1.5 text-black0 shadow-sm ring-1 ring-gray2 placeholder:text-gray2 focus:ring-2 focus:ring-outline-primer-2 sm:text-sm sm:leading-6"
               />
             </div>
           </div>
 
-          <div className="mt-2 flex items-center">
-            <input
-              type="checkbox"
-              id="infoDeclaration"
-              name="infoDeclaration"
-              className="h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded"
-            />
-            <label
-              for="infoDeclaration"
-              className="ml-2 block text-sm text-gray-900"
-            >
-              I declare that the information I have entered is correct and am
-              responsible for any errors in the information
-            </label>
-          </div>
+    <div className="mt-2 flex items-center">
+  <input
+    type="checkbox"
+    id="infoDeclaration1"
+    name="infoDeclaration"
+    className="h-4 w-4 text-gray1 focus:ring-primer2 border-gray-300 rounded"
+  />
+  <label
+    htmlFor="infoDeclaration1"
+    className="ml-2 block text-sm text-gray1"
+  >
+    I declare that the information I have entered is correct and am responsible for any errors in the information
+  </label>
+</div>
 
-          <div className="mt-2 flex items-center">
-            <input
-              type="checkbox"
-              id="infoDeclaration"
-              name="infoDeclaration"
-              className="h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded"
-            />
-            <label
-              for="infoDeclaration"
-              className="ml-2 block text-sm text-gray-900"
-            >
-              By creating an account, I agree to the Terms and Conditions, and
-              Privacy Policy{' '}
-              <a
-                href="#"
-                className="text-blue-500 font-semibold text-black-500 hover:animate-pulse"
-              >
-                Jalan Karirku
-              </a>
-            </label>
-          </div>
+<div className="mt-2 flex items-center">
+  <input
+    type="checkbox"
+    id="infoDeclaration2"
+    name="infoDeclaration"
+    className="h-4 w-4 text-gray1 focus:ring-primer2 border-gray-300 rounded"
+  />
+  <label
+    htmlFor="infoDeclaration2"
+    className="ml-2 block text-sm text-gray1"
+  >
+    By creating an account, I agree to the Terms and Conditions, and Privacy Policy{' '}
+    <Link
+      href="/"
+      className="text-primer2 font-semibold hover:animate-pulse"
+    >
+      Jalan Karirku
+    </Link>
+  </label>
+</div>
+
+
+
 
           <div>
             <button
               type="submit"
-              className="flex w-full justify-center bg-blue-500 rounded-md px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:scale-105 hover:shadow-lg  hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              className="flex w-full justify-center bg-primer2 rounded-md px-3 py-1.5 text-sm font-semibold leading-6 hover:bg-primer1 active:ring text-white0 active-ring-gray2 mb-3 shadow-sm"
             >
               Sign Up
             </button>
             <p className="text-gray-500 mt-1 text-center">
               Already have an account?
-              <a
+              <Link
                 href="/auth/login"
-                className="text-blue-500 font-semibold shadow-xl text-black-500 hover:animate-pulse inline-block ml-3"
+                className="text-blue-500 font-semibold  text-black-500 hover:animate-pulse inline-block ml-3"
               >
                 Sign In
-              </a>
+              </Link>
             </p>
           </div>
 
@@ -212,21 +218,21 @@ export default function Register() {
             <div className="border-t border-gray-300 flex-grow ml-5"></div>
           </div>
 
-          <div className="flex justify-center">
+          <div className="flex justify-center gap-4">
             <button
               type="submit"
-              className="flex w-full justify-center mb-5 ml-1 bg-primer4 rounded-md px-3 py-1.5 text-sm font-semibold leading-6 text-black0 shadow-xl hover:scale-105 hover:shadow-lg  hover:bg-blue-500 hover:text-white0 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600  mb-3 width=120px;"
+              className="flex w-full justify-center rounded-md px-3 py-1.5 text-sm font-semibold leading-6 text-black0 bg-primer3 hover:bg-primer2 hover:text-white0 active:ring active-ring-gray2 mb-3  shadow-sm"
             >
               <span className="flex gap-3 items-center">
-                <Icon icon="cib:google" /> Google
+                <Icon icon="flat-color-icons:google" />Google
               </span>
             </button>
             <button
               type="submit"
-              className="flex w-full justify-center mb-5 ml-5 bg-primer4 rounded-md px-3 py-1.5 text-sm font-semibold leading-6 text-black0 shadow-xl hover:scale-105 hover:shadow-lg  hover:bg-blue-500 hover:text-white0 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600  width=120px;"
+              className="flex w-full justify-center rounded-md px-3 py-1.5 text-sm font-semibold leading-6 text-black0 bg-primer3 hover:bg-primer2 hover:text-white0 active:ring active-ring-gray2 mb-3  shadow-sm"
             >
               <span className="flex gap-3 items-center">
-                <Icon icon="entypo-social:facebook-with-circle" /> Facebook
+                <Icon icon="logos:facebook" /> Facebook
               </span>
             </button>
           </div>
