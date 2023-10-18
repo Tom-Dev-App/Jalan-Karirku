@@ -3,7 +3,7 @@ import React from 'react';
 import { PropTypes } from 'prop-types';
 import { Icon } from '@iconify/react';
 import Image from 'next/image';
-import Button from './btn';
+import Button from './Btn';
 export default function Card({
   img,
   header,

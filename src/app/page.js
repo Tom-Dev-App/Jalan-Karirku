@@ -4,10 +4,9 @@ import Button from './components/Btn';
 import Footer from './components/footer';
 import Accordion from './components/accordion';
 import Navbar from './components/navbar';
-import SetTitle from '@/utils/SetTitle';
+import setTitle from '@/utils/setTitle';
 
 export default function Home() {
-SetTitle(`Jalankarirku - Home`)
   const FAQ = [
     {
       title: 'What is meant by soft skill development?',
