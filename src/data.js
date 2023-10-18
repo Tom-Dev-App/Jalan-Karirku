@@ -53,9 +53,16 @@ export const academy = [
     {
         slug: "effective-communication-skills",
         title: "Effective Communication Skills",
+        imgLink: '/assets/ilustration/Effective Communication Skills.svg',
+        modules: 7,
         brief: "This training will help you grasp the fundamentals of effective communication, including active listening, clear speaking, and persuasive writing.",
         price: "100000",
-        description: "",
+        description: {
+            about: "",
+            benefit: [
+                "Benefit"
+            ]
+        },
         class: [
             {
                 videoLink: "",
@@ -69,9 +76,11 @@ export const academy = [
             },
         ]
     },
+    
     {
         slug: "time-manangement-and-productivity",
         title: "Time Manangement and Productivity",
+        modules: 5,
         brief: "This training will assist you in better time management, identifying priorities, and enhancing productivity.",
         price: "120000",
         description: "",
@@ -91,6 +100,7 @@ export const academy = [
     {
         slug: "time-manangement-and-productivity",
         title: "Time Manangement and Productivity",
+        modules: 8,
         brief: "",
         price: "120000",
         description: ""
@@ -98,6 +108,7 @@ export const academy = [
     {
         slug: "effective-communication-skills",
         title: "Effective Communication Skills",
+        modules: 9,
         brief: "",
         price: "100000",
         description: ""
@@ -105,6 +116,7 @@ export const academy = [
     {
         slug: "time-manangement-and-productivity",
         title: "Time Manangement and Productivity",
+        modules: 6,
         brief: "",
         price: "120000",
         description: ""
@@ -112,6 +124,7 @@ export const academy = [
     {
         slug: "time-manangement-and-productivity",
         title: "Time Manangement and Productivity",
+        modules: 5,
         brief: "",
         price: "120000",
         description: ""
@@ -119,6 +132,7 @@ export const academy = [
     {
         slug: "effective-communication-skills",
         title: "Effective Communication Skills",
+        modules: 6,
         brief: "",
         price: "100000",
         description: ""
@@ -126,6 +140,7 @@ export const academy = [
     {
         slug: "time-manangement-and-productivity",
         title: "Time Manangement and Productivity",
+        module: 5,
         brief: "",
         price: "120000",
         description: ""
@@ -133,6 +148,7 @@ export const academy = [
     {
         slug: "time-manangement-and-productivity",
         title: "Time Manangement and Productivity",
+        module: 2,
         brief: "",
         price: "120000",
         description: ""
@@ -140,7 +156,18 @@ export const academy = [
 ]
 export const webinar = [
     {
-
+        slug: "",
+        title: "",
+        price: "",
+        imgLink: "",
+        datetime: "",
+        description: {
+            about: "",
+            benefit: [
+                "",
+                "",
+            ]
+        }
     },
 ]
 export const userData = [

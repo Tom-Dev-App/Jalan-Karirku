@@ -32,7 +32,8 @@ export default function Detail({ params }) {
                 </h1>
                 <div className="flex flex-wrap items-center py-2 px-4">
                   <Icon icon="bx:purchase-tag" width={'24px'} className="text-primer1" />
-                  <p className="px-4">{`Rp.${counsel.price.toLocaleString('id-ID')} `}</p>
+                  <p className="px-4">{`Rp.${counsel.price.toLocaleString('id-ID', { style: 'currency', currency: 'IDR' })}`}</p>
+
                 </div>
                 <div className="flex flex-wrap items-center py-4">
                   <Button type="link" className="btn-primary-lg" href={`/counseling/payment/${counsel.slug}`}>Buy</Button>

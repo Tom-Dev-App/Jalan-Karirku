@@ -4,6 +4,7 @@ import { PropTypes } from 'prop-types';
 import { Icon } from '@iconify/react';
 import Image from 'next/image';
 import Button from './Btn';
+import Link from 'next/link';
 export default function Card({
   img,
   header,
@@ -14,9 +15,11 @@ export default function Card({
   isPass = false,
   href,
   inProcess,
+  slug
 }) {
   if (isPaid === true && inProcess === false) {
     return (
+      <Link href={`/e-learning/classroom/${slug}`}>
       <div className="inline-flex flex-col gap-4 rounded-[8px] shadow-xl max-w-[337px] overflow-hidden">
         <div className="relative w-full">
           <Image
@@ -56,11 +59,13 @@ export default function Card({
           </Button>
         </div>
       </div>
+      </Link>
     );
   }
 
   if (inProcess === true && isPass === false) {
     return (
+      <Link href={`/e-learning/classroom/${slug}`}>
       <div className="inline-flex flex-col gap-4 rounded-[8px] shadow-xl max-w-[337px] overflow-hidden">
         <div className="relative w-full">
           <Image
@@ -96,10 +101,12 @@ export default function Card({
           {description}
         </p>
       </div>
+      </Link>
     );
   }
   if (inProcess === true && isPass === true) {
     return (
+      <Link href={`/e-learning/classroom/${slug}`}>
       <div className="inline-flex flex-col gap-4 rounded-[8px] shadow-xl max-w-[337px] overflow-hidden">
         <div className="relative w-full">
           <Image
@@ -135,11 +142,12 @@ export default function Card({
           {description}
         </p>
       </div>
+      </Link>
     );
   }
 
   return (
-    <>
+    <Link href={`/e-learning/${slug}`}>
       <div className="inline-flex flex-col gap-4 rounded-[8px] shadow-xl max-w-[337px] overflow-hidden">
         <div className="relative w-full">
           <Image
@@ -176,7 +184,7 @@ export default function Card({
           {description}
         </p>
       </div>
-    </>
+    </Link>
   );
 }
 
@@ -190,4 +198,5 @@ Card.propTypes = {
   href: PropTypes.string,
   description: PropTypes.string,
   img: PropTypes.object,
+  slug: PropTypes.string,
 };
