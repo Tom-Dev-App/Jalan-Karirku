@@ -1,0 +1,96 @@
+img {
+    width: 125px;
+    margin-top: 10px;
+}
+iconify-icon {
+    margin-top: 10px;
+    margin-right: 17px;
+    padding-right: 17px;
+}
+.ytb {
+    display: flex;
+    justify-content: flex-end; /* Memindahkan ikon ke kanan */
+    margin-right: 107px;
+    padding-top: 40px;
+}
+form{
+    padding-left: 40px;
+    margin-top: auto;
+}
+.navbar-brand{
+    color: aliceblue;
+    padding-left: 40px;
+    padding-top: 20px;
+    font-size: xx-large;
+    font-weight: bold;
+}
+.navbar.bg-body-tertiary {
+    background-color: transparent !important;
+}
+.fotoprofile {
+    width: 40px;
+    top: 40px;
+    margin-right: 107px;
+}
+.form-control{
+    background-color: rgba(0,0,0,0);
+    margin-right: 34px;
+}
+.nav-item{
+    margin-left: 21px;
+}
+.nav-link {
+    margin-left: 20px;
+}
+
+footer {
+    background-color: #0C356A;
+    height: 246px;
+    color: #fff;
+    margin-top: 700px;
+}
+.footer-content {
+    font-size: 14px;
+    margin-top: 2px;
+    text-align: center;
+}
+.footer-content a {
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+}
+/* .garis {
+    align-items: center;
+    width: 100px;
+    margin-top: 80px;
+} */
+.container {
+    display: flex;
+    justify-content: center; /* Mengatur posisi horizontal ke tengah */
+    align-items: center;    /* Mengatur posisi vertikal ke tengah */ 
+}
+.garis {
+    margin-top: 40px;
+    width: 190%; /* Lebar elemen .garis */
+}
+.aboutcontact {
+    margin-left: 138px;
+}
+.kotak{
+    border: 1px solid whitesmoke;
+    color: aliceblue;
+    width: 450px; 
+    height: 400px;
+    display: block;
+    margin: auto;
+    background-color: rgba(0,0,0,0.61);
+    border-radius: 15px;
+}
+
+  
+  
+  
+  
+  
+  
+  
