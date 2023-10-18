@@ -12,7 +12,7 @@ export default function Navbar() {
             <img
               width="145px"
               height="51px"
-              src="../assets/img/main logo.png"
+              src="/assets/img/main logo.png"
             />
           </Link>
 

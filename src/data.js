@@ -55,14 +55,38 @@ export const academy = [
         title: "Effective Communication Skills",
         brief: "This training will help you grasp the fundamentals of effective communication, including active listening, clear speaking, and persuasive writing.",
         price: "100000",
-        description: ""
+        description: "",
+        class: [
+            {
+                videoLink: "",
+                videoTitle: "",
+                script: ""
+            },
+            {
+                videoLink: "",
+                videoTitle: "",
+                script: ""
+            },
+        ]
     },
     {
         slug: "time-manangement-and-productivity",
         title: "Time Manangement and Productivity",
         brief: "This training will assist you in better time management, identifying priorities, and enhancing productivity.",
         price: "120000",
-        description: ""
+        description: "",
+        class: [
+            {
+                videoLink: "",
+                videoTitle: "",
+                script: ""
+            },
+            {
+                videoLink: "",
+                videoTitle: "",
+                script: ""
+            },
+        ]
     },
     {
         slug: "time-manangement-and-productivity",
