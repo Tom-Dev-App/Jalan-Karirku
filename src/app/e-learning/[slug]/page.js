@@ -12,7 +12,7 @@ export default function Detail({params}) {
     const academyClass = academy.find((academi) => academi.slug === slug);
   return (
     <>
-    <Navbar/>
+    <Navbar auth={true}/>
     <section style={{background: '#D5E5F2'}}>
       <div className='sm:cotainer md:container lg:container lg:py-14 lg:px-32'>
         <div className='flex flex-col'>
